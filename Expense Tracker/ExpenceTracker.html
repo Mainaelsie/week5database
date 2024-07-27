@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            background-color: whitesmoke;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fffffffa;
+        }
+        h1 {
+            color:black;
+        }
+        form {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: initial;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <title>Expense tracker Application</title>
+    </header>
+    <main>
+        <h1>Welcome to the Expense Tracker</h1>
+        <p>Track your expenses and manage your budget efficiently with our easy-to-use expense tracker.</p>
+        
+        <h2>Registration Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <input type="submit" value="Register">
+        </form>
+
+        <h2>User Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zack Molly</td>
+                    <td>zackmolly@gmail.com</td>
+                    <td>0712345678</td>
+                </tr>
+                <tr>
+                    <td>Robert Reigns</td>
+                    <td>robertreigns@gmail.com</td>
+                    <td>0798765432</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Track Your Expenses</h3>
+        <img src=https://i.etsystatic.com/11420576/r/il/9bb56c/1452591397/il_794xN.1452591397_cluc.jpg alt= "Expense Tracker Image">
+
+        <p>Visit <a href= https://google.com >Google</a> for more information.</p>
+        
+    </main>
+</body>
+<footer>
+</footer>
+</html>

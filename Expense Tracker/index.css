@@ -1,0 +1,454 @@
+/* login and register code */
+
+.login, .register{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%; 
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute; 
+    border-radius: 50%; 
+
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -90px;
+    top: -80px;
+
+}
+.shape:last-child{
+    background: linear-gradient(
+        #833e94,
+        #6656be
+
+    );
+    right: -80px;
+    bottom: -90px;
+}
+.loginform, .registerform{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); 
+    padding: 50px 35px;
+    
+}
+
+.loginform h3, .registerform h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    
+}
+.loginlabel, .registerlabel{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e5e5e5;
+}
+.logininput, .registerinput{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    font-family: 'Poppins' ,sans-serif; 
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.loginbutton, .registerbutton{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.loginbutton:hover{
+    background-color: rgba(9, 163, 60, 0.034);
+}
+.registerbutton:hover{
+    background-color: rgba(9, 163, 60, 0.034);
+}
+.logina, .registera{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+/* index.html code */
+
+body.index{
+    background-image: linear-gradient(to bottom, rgb(70, 106, 184) ,rgb(172, 122, 172) );
+    background-size: 100% 1000px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+header{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: right;
+    
+}
+nav li{
+    margin-right: 20px;
+    padding: 10px;
+    margin: 0;
+
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul :hover{
+    background-color: rgb(172, 122, 172);
+    cursor: pointer;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 50px;
+
+} 
+.home{
+    height: 300px;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+}
+.home h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+    
+}
+.home p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: small;
+    margin-top: 0px;
+    
+}
+.Features {
+    margin-top: 20px;
+    
+}
+
+.Features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.Features li {
+    margin-bottom: 10px;
+    margin-left: 0;
+    text-align: left;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    
+}
+
+/* addexpense code */
+.add{
+    background-color: rgba(114, 102, 102, 0.747);
+    
+}
+.addform{
+    height: 470px;
+    width: 400px; 
+    background-color: rgba(49, 127, 158, 0.13);
+    position:absolute;
+    transform: translate(-50%, -40%);
+    top: 35%;
+    left: 25%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px black; 
+    padding: 30px 35px; 
+}
+.addlabel{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #070707;
+}
+.addinput{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    font-family: 'Poppins' ,sans-serif; 
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+.addform h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 0px;
+    text-align: center;
+    color: #0a0909;
+}
+.addbutton{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    border: none;   
+}
+.addbutton:hover{
+    background-color: rgba(49, 59, 53, 0.034);
+}
+
+.addselect{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    font-family: 'Poppins' ,sans-serif; 
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+.addoption {
+    color: #070707;
+    background-color: grey;
+}
+.addlist{
+    margin: 20px auto;
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 300px;
+    backdrop-filter: blur(10px);
+}
+.addul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.addul li{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.addlist h2{
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 0px;
+    text-align: center;
+    color: #0a0909;
+}
+.addul li:last-child {
+    border-bottom: none;
+}
+
+/* viewexpense code */
+.view{
+   
+    color: #0f0f0f;
+    padding: 0px;
+    margin: 0;
+    background-color: rgba(114, 102, 102, 0.747);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.view h1{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+    color: black;
+    
+}
+.viewsection{
+    margin-top: 20px;
+}
+.viewtable{
+    width: 100%;
+    border-collapse: collapse;
+    /* margin: 20px 0;
+    margin: 70px auto;
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #833e94;
+    position: relative;
+    backdrop-filter: blur(10px); */
+}
+.viewth, .viewtd {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.edit {
+    background-color: rgba(114, 102, 102, 0.747) ;
+}
+.editform{
+    height: 550px;
+    width: 400px; 
+    background-color: rgba(49, 127, 158, 0.13);
+    position:absolute;
+    transform: translate(-50%, -40%);
+    top: 35%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px black; 
+    padding: 30px 35px;
+}
+.editlabel{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #070707;
+}
+.editinput{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    font-family: 'Poppins' ,sans-serif; 
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+.editform h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 0px;
+    text-align: center;
+    color: #0a0909; 
+}
+.submitbutton{
+    margin-top: 30px;
+    width: 35%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;   
+}
+.submitbutton:hover{
+    background-color: rgba(49, 59, 53, 0.034);
+}
+.deletebutton{
+    margin-top: 30px;
+    width: 35%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;  
+}
+.deletebutton:hover{
+    background-color: rgba(49, 59, 53, 0.034);
+}
+
+.editselect{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    font-family: 'Poppins' ,sans-serif; 
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+.aeditoption {
+    color: #070707;
+    background-color: grey;
+}
+

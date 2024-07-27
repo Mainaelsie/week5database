@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Expenses</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="edit">
+    <section class="editsection">
+        <form  class="editform">
+            <h1>Edit Expense</h1>
+            <label for="date" class="editlabel">Date</label>
+            <input type="date" class="editinput" name="date" id="date">
+            <label for="category" class="editlabel">Category</label>
+            <select name="category" id="Category" class="editselect">
+                <option value="Food" class="editoption">Food</option>
+                <option value="Transportation" class="editoption">Transportation</option>
+                <option value="Entertainment" class="editoption">Entertainment</option>
+                <option value="Housing" class="editoption">Housing</option>
+                <option value="Other" class="editoption">Other</option>
+            </select><br>
+            <label for="name" class="editlabel">Expense Name:</label>
+            <input type="text" class="editinput" placeholder="Expense Name" name="name" id="Name">
+            <label for="Amount" class="editlabel">Amount</label>
+            <input type="number" class="editinput" placeholder="Amount" name="amount" id="amount">
+            <button class="submitbutton" type="submit">Save Changes</button>
+            <button class="deletebutton" id="delete-btn">Delete Expense</button>
+        </form>
+    </section>
+    
+</body>
+</html>

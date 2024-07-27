@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expeneses</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="add">
+    <form class="addform">
+        <h3>Add Expense</h3>
+        <label for="Name" class="addlabel">Expense Name:</label>
+        <input type="text" class="addinput" placeholder="Expense Name" name="name" id="name" ><br>
+
+        <label for="amount" class="addlabel">Amount</label>
+        <input type="number" class="addinput" placeholder="Amount" name="amount" id="amount" ><br>
+
+        <label for="category" class="addlabel">Category</label>
+        <select name="category" id="category" class="addselect">
+            <option value="Food" class="addoption">Food</option>
+            <option value="Transportation" class="addoption">Transportation</option>
+            <option value="Housing" class="addoption">Housing</option>
+            <option value="Entertainment" class="addoption">Entertainment</option>
+            <option value="Other" class="addoption">Other</option>
+        </select>
+
+        <button class="addbutton" type="submit">Add Expense</button>
+
+    </form>
+    <div class="addlist">
+        <h2>Expenses:</h2>
+        <ul class="addul">
+            <!-- list of the expenses will be listed here. -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
